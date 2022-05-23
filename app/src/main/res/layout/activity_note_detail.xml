@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NoteDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:theme="?actionBarTheme"
+        android:background="@color/Pink">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DETAIL"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textSize="25sp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/Pink"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:onClick="saveNote" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DateTime (MM/DD/YYYY)"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/dateTimeEditText"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:minLines="3"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course ID"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/CourseIdEditText"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:minLines="3"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/DescriptionEditText"
+        android:layout_width="300dp"
+        android:layout_height="144dp"
+        android:layout_gravity="center"
+        android:minLines="3"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/deleteNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:textSize="25sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:onClick="deleteNote"/>
+
+</LinearLayout>
